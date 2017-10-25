@@ -15,7 +15,7 @@ https://the-coffee-ride-coffee-roasting-co.myshopify.com/
 > HTML, CSS, Javascript, jQuery, Materialize (for mobile compatability and styling), Stripe API.
 
 
-#Alternate proposal:
+# Alternate proposal:
 Grocery Deals based on location - A frontend website allowing users to search for the best grocery deals based on current location.
 
 > This project will use the Supermarket API to search for grocery deals based on a user's current area. Users can log thier favorite deals in a separate screen (which will incorporate Local Storage).
