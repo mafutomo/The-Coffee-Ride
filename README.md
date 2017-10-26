@@ -1,7 +1,7 @@
 # the_coffee_ride
 My Quarter 1 Project proposal:
 
-# Primary Proposal:
+Proposal:
 The Coffee Ride - A frontend website allowing users to show for quality coffee. 
 https://the-coffee-ride-coffee-roasting-co.myshopify.com/
 
@@ -13,10 +13,4 @@ https://the-coffee-ride-coffee-roasting-co.myshopify.com/
 > People who love coffee and want to support a local business!
 * What technologies will you be using?
 > HTML, CSS, Javascript, jQuery, Materialize (for mobile compatability and styling), Stripe API.
-
-
-# Alternate proposal:
-Grocery Deals based on location - A frontend website allowing users to search for the best grocery deals based on current location.
-
-> This project will use the Supermarket API to search for grocery deals based on a user's current area. Users can log thier favorite deals in a separate screen (which will incorporate Local Storage).
 
