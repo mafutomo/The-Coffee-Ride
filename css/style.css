@@ -15,7 +15,37 @@ body {
   background-color: #f4f4f4;
 }
 
+/*i {
+  font-size: 150%;
+}*/
 
+#the-roastery-padding{
+  padding-right: 4cm;
+  padding-left: 4cm;
+}
+
+#the-ride-padding{
+  padding-right: 4cm;
+}
+
+.button-font{
+  font-family: 'Cabin', sans-serif;
+  background-color: #e0aa38;
+}
+
+.button-font:hover {
+  background-color: #eac67a;
+}
+
+.background-image{
+  background-image: url("../media/background_pink.jpg");
+  background-size: 2500px 2000px;
+  background-repeat: no-repeat;
+}
+
+.padding-logo{
+  padding-left: 2.8cm;
+}
 
 
 #wider-container {
