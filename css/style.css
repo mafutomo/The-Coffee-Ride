@@ -6,6 +6,7 @@
  * Made By MaterializeCSS.com
  */
 
+
 html {
   font-family: 'Lora', serif;
 }
@@ -16,10 +17,41 @@ body {
 
 
 
+
+#wider-container {
+  height: 750px;
+}
+
+#smaller-container {
+  height: 600px;
+}
+
+#no-margin-container {
+  margin: 0;
+
+}
+
+.section-head {
+  font-family: 'Cabin', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.section-text {
+  font-family: 'Lora', serif;
+  line-height: 200%;
+}
+
+
+
 .titleText {
   font-family: 'Cabin', sans-serif;
   font-weight: bold;
   letter-spacing: 3px;
+}
+
+.imgText {
+  font-size: 350%;
 }
 
 .navy {

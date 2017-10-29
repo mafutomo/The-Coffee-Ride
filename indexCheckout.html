@@ -2,17 +2,86 @@
 <html>
   <head>
     <meta charset="utf-8">
+
     <title>The Coffee Ride - Checkout</title>
     <link rel="stylesheet" href="css/style.css">
+
     <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="script.js"></script>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet">
 
   </head>
 
   <body>
+
+    <!-- Navigation Bar -->
+  <div class="navbar-fixed">
+    <nav class="navy" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="white-text titleText flow-text">THE COFFEE RIDE</a>
+
+
+
+  <!-- Nav Options -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="white-text titleText">ABOUT</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">ABOUT</a></li>
+          </ul>
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="white-text titleText">MY CART</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">MY CART</a></li>
+          </ul>
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="white-text titleText">SHOP</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">SHOP</a></li>
+          </ul>
+
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Checkout -->
+
+  <ul class="collapsible" data-collapsible="expandable">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+</ul>
+
+  <!-- Stripe -->
 
 <script src="https://js.stripe.com/v3/"></script>
 

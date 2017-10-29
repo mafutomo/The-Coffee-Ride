@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+  function afterAngularOrReactHasCreatedAllDOM() {
+    // Manually make all DOM with .collapsible collapsible
+    $('.collapsible').collapsible();
+  }
+
+  console.log("ready!")
+  //Collapsable Table
 
   // Create a Stripe client
   var stripe = Stripe('pk_test_tYEpLQtxS7g099ysYO8jRShL');
@@ -27,7 +34,9 @@ $(document).ready(function() {
   };
 
   // Create an instance of the card Element
-  var card = elements.create('card', {style: style});
+  var card = elements.create('card', {
+    style: style
+  });
 
   // Add an instance of the card Element into the `card-element` <div>
   card.mount('#card-element');
@@ -58,5 +67,7 @@ $(document).ready(function() {
       }
     });
   });
+
+
 
 });
