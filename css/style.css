@@ -19,6 +19,10 @@ body {
   font-size: 150%;
 }*/
 
+.map-img {
+  border-radius: 50%;
+}
+
 #the-roastery-padding{
   padding-right: 4cm;
   padding-left: 4cm;
@@ -37,6 +41,7 @@ body {
   background-color: #eac67a;
 }
 
+
 .background-image{
   background-image: url("../media/background_pink.jpg");
   background-size: 2500px 2000px;
@@ -44,7 +49,11 @@ body {
 }
 
 .padding-logo{
-  padding-left: 2.8cm;
+  padding-left: 100px;
+}
+
+.alt-padding-logo{
+  padding-left: 70px;
 }
 
 
@@ -53,7 +62,7 @@ body {
 }
 
 #smaller-container {
-  height: 600px;
+  height: 500px;
 }
 
 #no-margin-container {
@@ -72,7 +81,12 @@ body {
   line-height: 200%;
 }
 
-
+.brew-type-title{
+  font-family: 'Cabin', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: black;
+}
 
 .titleText {
   font-family: 'Cabin', sans-serif;
@@ -96,6 +110,38 @@ body {
 
 #navText {
   color: #f4f4f4;
+}
+
+.light-coffee{
+  background-image: linear-gradient(to right, #f4f4f4 0%, #FFC6A6 100%);
+}
+
+.med-coffee{
+  background-image: linear-gradient(to right, #FFDCC4 0%, #C2967E 100%);
+}
+
+.dark-coffee{
+  background-image: linear-gradient(to right, #D1A288 0%, #695144 100%);
+}
+
+.shop-container{
+  width: 100%;
+  /*margin: 0;*/
+}
+
+.icon-color{
+  color:#0b3c5d;
+}
+
+.shopping-color{
+  color:#eac67a;
+}
+
+.card-content{
+  background-color: #f4f4f4;
+}
+.card-action{
+  background-color: #ccdfcb;
 }
 
 /*Materialize Default*/
@@ -123,8 +169,6 @@ p {
   .parallax-container .section {
     width: 100%;
   }
-
-
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {

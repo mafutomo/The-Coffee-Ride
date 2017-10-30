@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-    $('.collapsible').collapsible();
+// $('.collapsible').collapsible();
 
 
 console.log("ready!")
