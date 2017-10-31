@@ -1,68 +1,47 @@
 $(document).ready(function() {
 console.log("ready!")
 
-var $itemName = "";
 var itemName = "";
-var $itemPrice = "";
 var itemPrice = 0;
+
 
 // Adding Items to Cart
 // LIGHT
-$('.light-1 a').click(function (event) {
 
 
-$itemName = $('.card-content').siblings()
-console.log($itemName);
-itemName = $itemName.slice(0,-14);
-console.log(itemName)
-$itemPrice = $('.coffee-price').first().text()
-itemPrice = Number($itemPrice.replace(/[^0-9\.-]+/g,""));
-console.log(itemPrice);
+$('.card-content a').click(function (event) {
+event.preventDefault();
+
+var $target = $(event.target);
+var $itemName = $target.siblings()[0].innerText;
+itemName = $itemName.slice(0,-12);
+console.log('itemName =', itemName);
+var $itemPrice = $target.siblings()[2].innerText;
+var itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
+
+console.log('itemPrice = ',itemPrice);
+
+
 });
 
-$('.light-2 a').click(function (event) {
-  $itemName = $('.card-title').first().text()
-  console.log($itemName);
-  itemName = $itemName.slice(0,-14);
-  console.log(itemName)
-  $itemPrice = $('.coffee-price').first().text()
-  itemPrice = Number($itemPrice.replace(/[^0-9\.-]+/g,""));
-  console.log(itemPrice);
+$('.card-reveal a').click(function (event) {
+event.preventDefault();
+console.log("I'm clicked!");
+
+var $target = $(event.target);
+var $itemName = $target.parentsUntil('.card').siblings()[2].innerText;
+itemName = $itemName.slice(0,-5);
+
+console.log('itemName = ', itemName);
+
+console.log($target.parentsUntil('.card-image'));
+
+
+
 });
 
-$('.light-3').click(function () {
-console.log("3 clicked!")
-});
 
-// MEDIUM
-$('.medium-1').click(function () {
-console.log("m1 clicked!")
-});
 
-$('.medium-2').click(function () {
-console.log("m2 clicked!")
-});
-
-$('.medium-3').click(function () {
-console.log("m3 clicked!")
-});
-
-//DARK
-$('.dark-1').click(function () {
-console.log("d1 clicked!")
-});
-
-$('.dark-2').click(function () {
-console.log("d2 clicked!")
-});
-
-$('.dark-3').click(function () {
-console.log("d3 clicked!")
-});
-
-$('.dark-4').click(function () {
-console.log("d4 clicked!")
-});
 
 
 
