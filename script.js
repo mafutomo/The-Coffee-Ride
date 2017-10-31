@@ -1,61 +1,78 @@
 $(document).ready(function() {
 console.log("ready!")
 
+
 var itemName = "";
 var itemPrice = 0;
+var subtotal = 0;
+var tax = 1.03;
+var total = 0;
+var cart = JSON.parse(localStorage.getItem('cart')) || {};
+var quantity;
 
 
-// Adding Items to Cart
-// LIGHT
 
+// Function to Update Total
+function updateTotal() {
+  subtotal += itemPrice;
+  total = subtotal * tax;
+}
+//Function to Update Modal
+function updateModal(){
+  $('#shopping-cart').append("<tr>" + "<td>" + itemName + "</td>" + "<td>" + "$" + itemPrice.toFixed(2) + "</td>" + "</tr>");
+}
 
+// CLICK EVENT FOR TOP BUTTON
 $('.card-content a').click(function (event) {
 event.preventDefault();
-
 var $target = $(event.target);
 var $itemName = $target.siblings()[0].innerText;
-itemName = $itemName.slice(0,-12);
-console.log('itemName =', itemName);
+  itemName = $itemName.slice(0,-12);
 var $itemPrice = $target.siblings()[2].innerText;
-itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
+  itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
+updateTotal();
+updateModal();
 
-console.log('itemPrice = ',itemPrice);
+if(cart.hasOwnProperty(itemName) === false) {
+  cart[itemName] = [itemPrice,1];
+  localStorage.setItem('cart',JSON.stringify(cart));
+} else {
 
+  cart[itemName][1]++
+  localStorage.setItem('cart',JSON.stringify(cart));
+}
 
 });
 
+// CLICK EVENT FOR INNER BUTTON
 $('.card-reveal a').click(function (event) {
 event.preventDefault();
-console.log("I'm clicked!");
-
 var $target = $(event.target);
-var $itemName = $target.parentsUntil('.card').siblings()[2].innerText;
-itemName = $itemName.slice(0,-5);
-
-console.log('itemName = ', itemName);
-
+var $itemName =$target.parentsUntil('.card').siblings()[2].innerText;
+  itemName = $itemName.slice(0,-5);
 var $itemPrice = $target.parents('.card').children().children()[3].innerText;
-itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
+  itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
+updateTotal();
+updateModal();
 
-console.log('itemPrice = ',itemPrice);
+if(cart.hasOwnProperty(itemName) === false) {
+  cart[itemName] = [itemPrice,1];
+  localStorage.setItem('cart',JSON.stringify(cart));
+} else {
+
+  cart[itemName][1]++
+  localStorage.setItem('cart',JSON.stringify(cart));
+}
 
 });
-
-
-
-
-
-
-$('.collapsible').collapsible();
-$('.modal').modal({
-
-});
-
-
-
 
 //Collapsable Table
+$('.collapsible').collapsible();
+$('.modal').modal({
+});
 
+
+//STRIPE
   // Create a Stripe client
   var stripe = Stripe('pk_test_tYEpLQtxS7g099ysYO8jRShL');
 

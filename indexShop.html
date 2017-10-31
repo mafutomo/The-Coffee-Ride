@@ -23,6 +23,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
 <body id="shop-background-image">
@@ -103,7 +104,7 @@
        <img class="activator" src="media/coffee1.jpg">
      </div>
      <div class="card-content">
-       <span class="card-title grey-text text-darken-4 activator ">Ethiopia Derar Ela <i class="material-icons right icon-color">info_outline</i></span>
+       <span class="card-title grey-text text-darken-4 activator ">Ethiopia Derar Ela<i class="material-icons right icon-color">info_outline</i></span>
        <p>Pineapple | Oranges | Green Tea</p>
        <p>$18</p>
        <br>
@@ -303,7 +304,7 @@
                   <br>
 
       <!-- First Card -->
-      <div class="col s12 m3 l3">
+      <div class="col s12 m3 l4">
       <div class="card dark-1">
          <div class="card-image waves-effect waves-block waves-light">
            <img class="activator" src="media/coffeed1.jpg">
@@ -330,7 +331,7 @@
 
           <!-- Second Card -->
 
-          <div class="col s12 m3 l3">
+          <div class="col s12 m3 l4">
           <div class="card">
              <div class="card-image waves-effect waves-block waves-light">
                <img class="activator" src="media/coffee2.jpg">
@@ -356,7 +357,7 @@
               </div>
 
               <!-- Third Card -->
-              <div class="col s12 m3 l3">
+              <div class="col s12 m3 l4">
               <div class="card">
                  <div class="card-image waves-effect waves-block waves-light">
                    <img class="activator" src="media/coffee4.jpeg">
@@ -380,32 +381,7 @@
                </div>
                   </div>
 
-                  <!-- Fouth Card -->
 
-                  <div class="col s12 m3 l3">
-                  <div class="card">
-                     <div class="card-image waves-effect waves-block waves-light">
-                       <img class="activator" src="media/coffeed1.jpg">
-                     </div>
-                     <div class="card-content">
-                       <span class="card-title activator grey-text text-darken-4">Black Lightning<i class="material-icons right icon-color">info_outline</i></span>
-                       <p>Earthy | Heavy Body | Nutty</p>
-                        <p>$15</p>
-                       <br>
-                         <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-
-                     </div>
-
-                     <div class="card-reveal">
-                       <span class="card-title grey-text text-darken-4">Black Lightning<i class="material-icons right">close</i></span>
-                       <p>You asked for it and we listened. The Coffee Ride has designated this direct trade/fair trade/organic certified coffee to represent its dark roast offering. This coffee is roasted to the precise point where you receive the full body cup you are desiring in your dark roast with a slight hint of smokey flavor, while bringing out the earthy/hazelnut cupping notes this great bean has the capabilities of producing.</p>
-                       <div class="card-action">
-                         <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-                        </div>
-
-                     </div>
-                    </div>
-                      </div>
 
 
                     </div><!-- row -->
@@ -419,10 +395,26 @@
 <div id="modal1" class="modal bottom-sheet">
   <div class="modal-content">
     <h4>Shopping Cart</h4>
-    <p>A bunch of text</p>
+    <div class="right-align">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Continue Shopping</a>
+    </div>
+
+
+    <table>
+        <thead>
+          <tr>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody id = 'shopping-cart'>
+          <!-- jQuery stuff happens here -->
+        </tbody>
+      </table>
+
   </div>
   <div class="modal-footer">
-    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Continue Shopping</a>
   </div>
 </div>
 

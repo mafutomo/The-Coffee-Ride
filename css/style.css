@@ -74,6 +74,10 @@ body {
 
 /*Fonts and Title Texts*/
 
+.card{
+  font-family: 'Work Sans', sans-serif;
+}
+
 .section-head {
   font-family: 'Cabin', sans-serif;
   font-weight: bold;
@@ -136,10 +140,6 @@ body {
 }
 .card-action{
   background-color: #ccdfcb;
-}
-
-.card-font{
-  font-family: 'Work Sans', sans-serif;
 }
 
 .shop-container{
