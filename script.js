@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
 
-// $('.collapsible').collapsible();
+$('.collapsible').collapsible();
+$('.modal').modal({
+});
 
 
 console.log("ready!")
