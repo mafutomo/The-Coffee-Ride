@@ -17,7 +17,7 @@ var $itemName = $target.siblings()[0].innerText;
 itemName = $itemName.slice(0,-12);
 console.log('itemName =', itemName);
 var $itemPrice = $target.siblings()[2].innerText;
-var itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
+itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
 
 console.log('itemPrice = ',itemPrice);
 
@@ -34,9 +34,10 @@ itemName = $itemName.slice(0,-5);
 
 console.log('itemName = ', itemName);
 
-console.log($target.parentsUntil('.card-image'));
+var $itemPrice = $target.parents('.card').children().children()[3].innerText;
+itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
 
-
+console.log('itemPrice = ',itemPrice);
 
 });
 
