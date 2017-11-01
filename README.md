@@ -1,7 +1,7 @@
 # Quarter 1 Project
 
 ###### Surge Link:
-thecoffeeride.mutomo.surge.sh
+Webiste link : thecoffeeride.mutomo.surge.sh
 
 ## The Coffee Ride
 This is a frontend website that allows users to shop for coffee online.
