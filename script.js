@@ -10,6 +10,7 @@ function updateTotalVal(subtotal,itemPrice,tax) {
   return parseInt(total);
 }
 
+//Begin doc ready
 
 $(document).ready(function() {
 console.log("ready!")
@@ -27,7 +28,7 @@ var subtotal = JSON.parse(localStorage.getItem('subtotal')) || 0;
 var tax = 1.03;
 var total = 0;
 var cart = JSON.parse(localStorage.getItem('cart')) || {};
-var quantity;
+
 
 
 

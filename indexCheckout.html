@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Javascript -->
-      <script
-      src="https://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="cartScript.js"></script>
     <script type="text/javascript" src="stripeScript.js"></script>
 
     <!-- CSS  -->
@@ -109,17 +106,17 @@
        <tbody>
          <tr>
            <td>Subtotal</td>
-           <td>$0.00</td>
+           <td id ="subtotal-val">$0.00</td>
 
          </tr>
          <tr>
            <td>Tax</td>
-           <td>$0.00</td>
+           <td id = "tax-val">$0.00</td>
 
          </tr>
          <tr>
            <td>Total</td>
-           <td>$0.00</td>
+           <td id = "total-val">$0.00</td>
 
          </tr>
        </tbody>
