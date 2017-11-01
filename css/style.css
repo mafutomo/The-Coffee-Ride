@@ -5,12 +5,13 @@ html {
 
 body {
   background-color: #f4f4f4;
+
 }
 
 #shop-background-image{
   background-image: url("../media/largerbackground.jpg");
   background-size: 1600px 2300px;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
   background-position: center;
 }
 
@@ -76,6 +77,12 @@ body {
 
 .card{
   font-family: 'Work Sans', sans-serif;
+}
+
+#header-text{
+  font-family: 'Work Sans', sans-serif;
+  background-color:rgba(244, 244, 244,0.75);
+  font-size: 108%;
 }
 
 .section-head {

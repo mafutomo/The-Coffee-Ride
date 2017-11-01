@@ -1,8 +1,24 @@
+function add (x,y) {
+  return x + y;
+}
+
+function updateTotalVal(subtotal,itemPrice,tax) {
+  subtotal += itemPrice;
+  total = subtotal * tax;
+  localStorage.setItem('subtotal',JSON.stringify(subtotal));
+  $("#subtotal").empty().text("Subtotal = "+"$" + subtotal);
+  return parseInt(total);
+}
+
+
 $(document).ready(function() {
 console.log("ready!")
 
+
 $('#shopping-cart').load(function(){
+
 updateModal()
+
 })
 
 var itemName = "";
@@ -20,6 +36,7 @@ function updateTotal() {
   subtotal += itemPrice;
   total = subtotal * tax;
   localStorage.setItem('subtotal',JSON.stringify(subtotal));
+
   $("#subtotal").empty().text("Subtotal = "+"$" + subtotal);
   console.log(subtotal)
 }
@@ -31,6 +48,14 @@ $('#shopping-cart').empty();
       $('#shopping-cart').append("<tr>" + "<td>" + key + "</td>" + "<td>" + "$" + cart[key][0] + "</td>" + "<td>" + cart[key][1] +"</td>" + "</tr>");
     }
 }//end of function
+
+//Function to Update Cart Page
+function updateCart() {
+  $('#cart-final').empty();
+  for (let key in cart){
+    $('#cart-final').append("<tr>" + "<td>" + key + "</td>" + "<td>" + "$" + cart[key][0] + "</td>" + "<td>" + cart[key][1] +"</td>" + "</tr>");
+  }
+}
 
 
 // CLICK EVENT FOR TOP BUTTON
@@ -54,6 +79,7 @@ if(cart.hasOwnProperty(itemName) === false) {
 
 updateModal();
 
+
 });
 
 // CLICK EVENT FOR INNER BUTTON
@@ -65,6 +91,7 @@ var $itemName =$target.parentsUntil('.card').siblings()[2].innerText;
 var $itemPrice = $target.parents('.card').children().children()[3].innerText;
   itemPrice = Number($itemPrice.replace(/[^0-9\.]+/g,""));
 
+updateTotal();
 
 if(cart.hasOwnProperty(itemName) === false) {
   cart[itemName] = [itemPrice,1];
@@ -74,74 +101,51 @@ if(cart.hasOwnProperty(itemName) === false) {
   localStorage.setItem('cart',JSON.stringify(cart));
 }
 
-updateTotal();
 updateModal();
-
 });
 
-//Collapsable Table
-$('.collapsible').collapsible();
-$('.modal').modal({
-});
+ $('.modal').modal();
 
-//STRIPE
-  // Create a Stripe client
-  var stripe = Stripe('pk_test_tYEpLQtxS7g099ysYO8jRShL');
+$("#checkout_button").click(function(event) {
+  let $name = $("#name").val();
+  let $phone = $("#phone").val().split("-").join("");
+  let $streetAddress = $("#street-address").val();
+  let $city = $("#city").val();
+  let $state = $("#state").val();
+  let $zip = $("#zip").val();
 
-  // Create an instance of Elements
-  var elements = stripe.elements();
+  console.log(parseInt($phone));
+  console.log(isNaN(parseInt($phone)));
 
-  // Custom styling can be passed to options when creating an Element.
-  // (Note that this demo uses a wider set of styles than the guide below.)
-  var style = {
-    base: {
-      color: '#32325d',
-      lineHeight: '24px',
-      fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-      fontSmoothing: 'antialiased',
-      fontSize: '16px',
-      '::placeholder': {
-        color: '#aab7c4'
-      }
-    },
-    invalid: {
-      color: '#fa755a',
-      iconColor: '#fa755a'
-    }
-  };
+  if (total === 0) {
+    Materialize.toast('Please add items to your cart!', 4000)
 
-  // Create an instance of the card Element
-  var card = elements.create('card', {style: style});
+  } else if ($name === "") {
 
-  // Add an instance of the card Element into the `card-element` <div>
-  card.mount('#card-element');
+    Materialize.toast('Please fill out your name', 4000)
 
-  // Handle real-time validation errors from the card Element.
-  card.addEventListener('change', function(event) {
-    var displayError = document.getElementById('card-errors');
-    if (event.error) {
-      displayError.textContent = event.error.message;
-    } else {
-      displayError.textContent = '';
-    }
-  });
+  } else if ($phone.length !== 10) {
 
-  // Handle form submission
-  var form = document.getElementById('payment-form');
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
+    Materialize.toast('Please enter a valid phone number', 4000)
 
-    stripe.createToken(card).then(function(result) {
-      if (result.error) {
-        // Inform the user if there was an error
-        var errorElement = document.getElementById('card-errors');
-        errorElement.textContent = result.error.message;
-      } else {
-        // Send the token to your server
-        stripeTokenHandler(result.token);
-      }
-    });
-  });
+  } else if ($phone === "") {
+
+    Materialize.toast('Please enter a phone number', 4000)
+
+  } else if ($streetAddress === "" || $city === "" || $state === "" || $zip === "") {
+
+    Materialize.toast('One or more of your address information is not complete', 4000)
+
+  } else if ($zip.length !== 5) {
+
+    Materialize.toast('Please enter a valid zipcode', 4000)
+
+  } else {
+    Materialize.toast('Order Received!', 4000);
+    console.log("NOT zero!");
+  }
+
+}); //end of submit click
 
 
 

@@ -13,7 +13,7 @@
       crossorigin="anonymous"></script>
     <script src="js/materialize.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+    <script type="text/javascript" src="stripeScript.js"></script>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -72,58 +72,138 @@
 
   <div class="container">
     <div class="row">
-
       <div class="col s12 m12 l12">
 
-<!-- The Checkout -->
-        <div class="c12 m6 l6">
-          <ul class="collapsible" data-collapsible="expandable">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        </ul>
+      </div>
+<!-- The Table -->
+        <div class="col s12 m6 l8">
+
+
+
+          <table class="striped">
+        <thead>
+          <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+          </tr>
+        </thead>
+
+        <tbody id= "cart-final">
+
+          <!-- jQuery Happens Here -->
+
+        </tbody>
+      </table>
+
+      <table>
+       <thead>
+         <tr>
+             <th></th>
+             <th></th>
+             <th></th>
+         </tr>
+       </thead>
+
+
+       <tbody>
+         <tr>
+           <td>Subtotal</td>
+           <td>$0.00</td>
+
+         </tr>
+         <tr>
+           <td>Tax</td>
+           <td>$0.00</td>
+
+         </tr>
+         <tr>
+           <td>Total</td>
+           <td>$0.00</td>
+
+         </tr>
+       </tbody>
+     </table>
+
+
+
         </div>
 
 <!-- The Form -->
-        <div class="c12 m6 l6">
+
+        <div class="col s12 m6 l4">
+
+          <div class="input-field col s6 m12 l12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="name" type="text">
+            <label for="icon_prefix">Name</label>
+          </div>
+
+          <div class="input-field col s6 m12 l12">
+            <i class="material-icons prefix">phone</i>
+            <input id="phone" type="tel">
+            <label for="icon_telephone">### - ### - ####</label>
+          </div>
+
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">home</i>
+              <input id="street-address" type="text">
+              <label for="address">Address</label>
+            </div>
+
+            <div class="input-field col s6 m6 l7">
+              <i class="material-icons prefix"></i>
+              <input id="city" type="text">
+              <label for="city">City</label>
+            </div>
+            <div class="input-field col s6 m6 l5">
+              <i class="material-icons prefix"></i>
+              <input id="state" type="text">
+              <label for="state">State</label>
+            </div>
+
+
+          <div class="input-field col s6 m6 l12">
+        <i class="material-icons prefix"> </i>
+        <input id="zip" type="text">
+        <label for="zip">Five-Digit Zipcode</label>
+          <br>
+        </div>
+
+
 
           <!-- Stripe -->
 
+          <div class="col s12 m6 l8">
 
 
-            <form action="/charge" method="post" id="payment-form" >
-              <div class="form-row">
-                <label for="card-element">
-                  Credit or debit card
-                </label>
-                <div id="card-element">
-                  <!-- a Stripe Element will be inserted here. -->
-                </div>
-
-                <!-- Used to display form errors -->
-                <div id="card-errors" role="alert"></div>
+          <script src="https://js.stripe.com/v3/"></script>
+          <form action="/charge" method="post" id="payment-form">
+            <div class="form-row">
+              <label for="card-element">
+                Credit or debit card
+              </label>
+              <div id="card-element">
+                <!-- a Stripe Element will be inserted here. -->
               </div>
-                <br>
-              <button class="myButton">Submit Payment</button>
-            </form>
 
+              <!-- Used to display form errors -->
+              <div id="card-errors" role="alert"></div>
+            </div>
+            <br>
+
+            <button id = "checkout_button">Checkout</button>
+
+          </form>
         </div>
 
-      </div>
+      </div><!-- form section col -->
 
     </div><!-- row div -->
 
   </div><!-- container div -->
-
+<br><br>
 <!-- Footer -->
 
     <footer class="navy page-footer">
