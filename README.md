@@ -1,22 +1,25 @@
-# the_coffee_ride
-My Quarter 1 Project proposal:
+# Quarter 1 Project
 
-Proposal:
-The Coffee Ride - A frontend website allowing users to show for quality coffee.
+###### Surge Link:
+Webiste link : thecoffeeride.mutomo.surge.sh
+
+## The Coffee Ride
+This is a frontend website that allows users to shop for coffee online.
+
+###### Business Background
+The Coffee Ride is a real local business in Boulder that delivers quality, ethically sourced coffee via bikes.
+
+###### User Manual
+> The Front Page (Home) : This is an overview of the Business
+
+> Shop Tab : Here, users can browse through each coffee selection and add it to their cart by clicking the "Add to Cart" button. A modal will appear at the bottom of the screen showing a preview of their current shopping cart. If the user has previously visited the site, the site will remember their cart from the previous sessions. Users can also ready more about a specific coffee selection by clicking on the "information" icon.
+
+> My Cart Tab: Users are able to look through a summary of their purchases, fill out a form, and checkout.
+
+###### Technologies
+> HTML, CSS, Local Storage, Javascript, jQuery, Materialize (for mobile compatability and styling), Stripe API.
+
+Original website:
 https://the-coffee-ride-coffee-roasting-co.myshopify.com/
 
-> This project will be similar to Galvanize Delivers but with more rhobust features. It will store data in Local Storage with a separate checkout screen to keep track of what the user selects. It will implement the Stripe API to take in credit card information and coordinate the "checkout" process.
-
-* What problem or need does your project solve?
-> This project solves the need to order coffee and coffee subscription online in an efficient, easy, and trustworthy manner.
-* Who would be a user of your website?
-> People who love coffee and want to support a local business!
-* What technologies will you be using?
-> HTML, CSS, Javascript, jQuery, Materialize (for mobile compatability and styling), Stripe API.
-
-#design
-* Fonts
-Gotham Bold Regular: http://fontsgeek.com/fonts/Gotham-Bold-Regular,
-Lora: https://fonts.google.com/specimen/Lora?utm_source=google&utm_medium=cpc&utm_campaign=1001467+|+Material.IO+|+Global+|+en+|+Hybrid+|+Text+|+BKWS&utm_term=%7Bkeyword%7D&gclid=CjwKCAjwssvPBRBBEiwASFoVd4Kab-mP--D5HykShpRVndw4JKkEaYkvLUcw8cfFOlFCQ3V-m4Q9uxoC9NoQAvD_BwE&slant=1&thickness=4
-
-Website inspiration: http://elmcoffeeroasters.com/
+Website styling inspiration: http://elmcoffeeroasters.com/
