@@ -16,7 +16,12 @@ The Coffee Ride is a real local business in Boulder that delivers quality, ethic
 
 > Shop Tab : Here, users can browse through each coffee selection and add it to their cart by clicking the "Add to Cart" button. A modal will appear at the bottom of the screen showing a preview of their current shopping cart. If the user has previously visited the site, the site will remember their cart from the previous sessions. Users can also ready more about a specific coffee selection by clicking on the "information" icon.
 
+![Alt text](media/shop_page_ss.png "Optional Title")
+![Alt text](media/module_pop_ss.png "Optional Title")
+
 > My Cart Tab: Users are able to look through a summary of their purchases, fill out a form, and checkout.
+
+![Alt text](media/checkout_ss.png "Optional Title")
 
 ###### Technologies
 > HTML, CSS, Local Storage, Javascript, jQuery, Materialize (for mobile compatability and styling), Stripe API.
