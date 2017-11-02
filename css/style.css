@@ -49,10 +49,6 @@ body {
 
 /*Section Padding*/
 
-#the-roastery-padding{
-  padding-right: 4cm;
-  padding-left: 4cm;
-}
 
 #the-ride-padding{
   padding-right: 4cm;
@@ -227,6 +223,11 @@ footer.page-footer {
 	font-size: inherit;
 }
 /*STRIPE STYLES*/
+
+.stripe-button-el span{
+    background-color: red;
+}
+
 .StripeElement {
   background-color: white;
   padding: 8px 12px;

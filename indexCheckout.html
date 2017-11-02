@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <title>The Coffee Ride - Checkout</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="media/favicon.ico">
+
+    <!-- CSS  -->
+
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
     <!-- Javascript -->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -14,12 +18,8 @@
     <script type="text/javascript" src="cartScript.js"></script>
 
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
@@ -30,227 +30,241 @@
   <body class ="background-image">
 
     <!-- Navigation Bar -->
-  <div class="navbar-fixed">
-    <nav class="navy" role="navigation">
-  <a href="index.html" class="brand-logo hide-on-small-only"><img class="padding-logo responsive-img" id="logo" src="media/coffee_ride_logo.png"/></a>
+
+    <div class="navbar-fixed">
+
+      <nav class="navy" role="navigation">
+
+        <a href="index.html" class="brand-logo hide-on-small-only"><img class="padding-logo responsive-img" id="logo" src="media/coffee_ride_logo.png"/></a>
+
         <div class="nav-wrapper container">
 
           <a id="logo-container" href="index.html" class="white-text titleText flow-text">THE COFFEE RIDE</a>
 
-  <!-- Nav Options -->
+
+          <!-- Navigation Options -->
+
           <ul class="right hide-on-med-and-down">
             <li><a href="indexAbout.html" class="white-text titleText">ABOUT</a></li>
           </ul>
 
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="indexAbout.html">ABOUT</a></li>
-          </ul>
 
           <ul class="right hide-on-med-and-down">
             <li><a href="indexCheckout.html" class="white-text titleText">MY CART</a></li>
-          </ul>
-
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="indexCheckout.html">MY CART</a></li>
           </ul>
 
           <ul class="right hide-on-med-and-down">
             <li><a href="indexShop.html" class="white-text titleText">SHOP</a></li>
           </ul>
 
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="indexShop.html">SHOP</a></li>
-          </ul>
 
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="white-text titleText">HOME</a></li>
           </ul>
 
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="index.html">HOME</a></li>
-          </ul>
 
 
+  <!-- Hamburger -->
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
-      </div>
-    </nav>
-  </div>
+    </div>
 
-  <!-- Checkout -->
+
+      </nav>
+
+        </div>
+
+
+  <!-- Mobile Sidebar -->
+    <ul id="nav-mobile" class="side-nav">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="indexShop.html">SHOP</a></li>
+    <li><a href="indexCheckout.html">MY CART</a></li>
+    <li><a href="indexAbout.html">ABOUT</a></li>
+        </ul>
 
   <div class="container">
+
     <div class="row">
-      <div class="col s12 m12 l12">
 
-      </div>
-<!-- The Table -->
-        <div class="col s12 m6 l7">
+      <div class="col s12 m12 l12"><!-- the big col -->
 
-<h4>Shopping Cart</h4>
+        <div class="col s12 m6 l6"><!-- the shopping cart col -->
+
+          <h4>Shopping Cart</h4>
 
           <table class="striped">
-        <thead>
+          <thead>
           <tr>
               <th>Item</th>
               <th>Price</th>
               <th>Quantity</th>
           </tr>
-        </thead>
+          </thead>
 
-        <tbody id= "cart-final">
+          <tbody id= "cart-final">
 
           <!-- jQuery Happens Here -->
 
-        </tbody>
-      </table>
+          </tbody>
+          </table>
 
-      <table>
-       <thead>
-         <tr>
+          <table>
+          <thead>
+          <tr>
              <th></th>
              <th></th>
              <th></th>
-         </tr>
-       </thead>
+          </tr>
+          </thead>
 
 
-       <tbody>
-         <tr>
+          <tbody>
+          <tr>
            <td>Subtotal</td>
            <td id ="subtotal-val">$0.00</td>
 
-         </tr>
-         <tr>
+          </tr>
+          <tr>
            <td>Tax</td>
            <td id = "tax-val">$0.00</td>
 
-         </tr>
-         <tr>
+          </tr>
+          <tr>
            <td>Total</td>
            <td id = "total-val">$0.00</td>
 
-         </tr>
-       </tbody>
-     </table>
+          </tr>
+          </tbody>
+          </table>
 
 
 
-        </div>
-
-<!-- The Form -->
-
-        <div class="col s12 m6 l5">
-
-          <h4>Checkout</h4>
-
-          <div class="input-field col s6 m12 l12">
-            <i class="material-icons prefix">account_circle</i>
-            <input id="name" type="text">
-            <label for="icon_prefix">Name</label>
-          </div>
-
-          <div class="input-field col s6 m12 l12">
-            <i class="material-icons prefix">phone</i>
-            <input id="phone" type="tel">
-            <label for="icon_telephone">### - ### - ####</label>
-          </div>
+          </div><!-- end of shopping car col -->
 
 
-            <div class="input-field col s12">
-              <i class="material-icons prefix">home</i>
-              <input id="street-address" type="text">
-              <label for="address">Address</label>
-            </div>
+<div class="col s12 m6 l6"><!-- the checkout col -->
 
-            <div class="input-field col s6 m6 l7">
-              <i class="material-icons prefix"></i>
-              <input id="city" type="text">
-              <label for="city">City</label>
-            </div>
-            <div class="input-field col s6 m6 l5">
-              <i class="material-icons prefix"></i>
-              <input id="state" type="text">
-              <label for="state">State</label>
-            </div>
+  <h4>Checkout</h4>
 
+  <div class="input-field col s6 m12 l12">
+    <i class="material-icons prefix">account_circle</i>
+    <input id="name" type="text">
+    <label for="icon_prefix">Name</label>
+  </div>
 
-          <div class="input-field col s6 m6 l12">
-        <i class="material-icons prefix"> </i>
-        <input id="zip" type="text">
-        <label for="zip">Five-Digit Zipcode</label>
-          <br>
-        </div>
+  <div class="input-field col s6 m12 l12">
+    <i class="material-icons prefix">phone</i>
+    <input id="phone" type="tel">
+    <label for="icon_telephone">### - ### - ####</label>
+  </div>
 
 
+    <div class="input-field col s12">
+      <i class="material-icons prefix">home</i>
+      <input id="street-address" type="text">
+      <label for="address">Address</label>
+    </div>
 
-          <!-- Stripe -->
+    <div class="input-field col s6 m6 l7">
+      <i class="material-icons prefix"></i>
+      <input id="city" type="text">
+      <label for="city">City</label>
+    </div>
+    <div class="input-field col s6 m6 l5">
+      <i class="material-icons prefix"></i>
+      <input id="state" type="text">
+      <label for="state">State</label>
+    </div>
 
-          <div class="col s12 m6 l12 right-align">
 
-          <script src="https://js.stripe.com/v3/"></script>
-          <form action="/charge" method="post" id="payment-form">
-            <div class="form-row">
-              <label for="card-element">
-                Credit or debit card
-              </label>
-              <div id="card-element">
-                <!-- a Stripe Element will be inserted here. -->
-              </div>
+  <div class="input-field col s12 m6 l12">
+<i class="material-icons prefix"> </i>
+<input id="zip" type="text">
+<label for="zip">Five-Digit Zipcode</label>
+  <br>
+  <br>
 
-              <!-- Used to display form errors -->
-              <div id="card-errors" role="alert"></div>
-            </div>
-            <br>
+<!-- Stripe -->
 
-            <button id = "checkout_button">Checkout</button>
+<script src="https://js.stripe.com/v3/"></script>
+<form action="/charge" method="post" id="payment-form">
+  <div class="form-row">
+    <label for="card-element">
 
-          </form>
-        </div>
+    </label>
+    <div id="card-element">
+      <!-- a Stripe Element will be inserted here. -->
+    </div>
 
-      </div><!-- form section col -->
+    <!-- Used to display form errors -->
+    <div id="card-errors" role="alert"></div>
+  </div>
+  <br>
 
-    </div><!-- row div -->
 
-  </div><!-- container div -->
+
+  <button id = "checkout_button" class="btn waves-effect waves-light" type="submit" name="action">Submit
+<i class="material-icons right">send</i>
+</button>
+<br>
+<br>
+
+</form><!-- end of stripe form -->
+
+</div>
+
+      </div><!-- end of checkout col -->
+
 <br><br>
-<!-- Footer -->
 
-    <footer class="navy page-footer">
+    </div><!-- the big col -->
+  </div><!-- the big row -->
+
+</div><!-- the big container -->
+
+  <footer class="navy page-footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="left-align">
+
+
+        <div class="col s12 m12 l12">
+
+          <a class = "social-media-icon" href="https://www.facebook.com/thecoffeeride/"><img src="media/facebook_icon.png" target="blank" alt="facebook_icon"></a>
+          <a class = "social-media-icon" href="https://twitter.com/thecoffeeride?lang=en"><img src="media/twitter_icon.png" alt=""></a>
+          <a class = "social-media-icon" href="https://www.instagram.com/thecoffeeride/"><img src="media/instagram_icon.png" alt=""></a>
+          <h6 class="grey-text text-lighten-4">
+            970 - 389 - 9939
+            <br>
+            <br>
+            thecoffeeride@gmail.com
+            <br>
+            <br>
+            4949 Broadway St. #130
+            <br>
+            <br>
+            Boulder, Co. 80304</h6>
+
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+
       <div class="container">
-        <div class="row">
-
-          <div class="left-align">
-
-
-          <div class="col s12 m12 l12">
-
-            <a href="https://www.facebook.com/thecoffeeride/"><img src="media/facebook_icon.png" target="blank" alt="facebook_icon"></a>
-            <a href="https://twitter.com/thecoffeeride?lang=en"><img src="media/twitter_icon.png" alt=""></a>
-            <a href="https://www.instagram.com/thecoffeeride/"><img src="media/instagram_icon.png" alt=""></a>
-            <h6 class="grey-text text-lighten-4">
-              970 - 389 - 9939
-              <br>
-              <br>
-              thecoffeeride@gmail.com
-              <br>
-              <br>
-              4949 Broadway St. #130
-              <br>
-              <br>
-              Boulder, Co. 80304</h6>
-
-          </div>
-        </div>
-
-        </div>
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Melissa Utomo</a>
       </div>
-      <div class="footer-copyright">
+    </div>
+  </footer>
 
-        <div class="container">
-        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Melissa Utomo</a>
-        </div>
-      </div>
-    </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
-  </body>
+</body>
+
 </html>

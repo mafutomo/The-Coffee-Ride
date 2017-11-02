@@ -27,49 +27,59 @@
 <body class="background-image">
 
   <!-- Navigation Bar -->
-<div class="navbar-fixed">
-  <nav class="navy" role="navigation">
-<a href="index.html" class="brand-logo hide-on-small-only"><img class="padding-logo responsive-img" id="logo" src="media/coffee_ride_logo.png"/></a>
+
+  <div class="navbar-fixed">
+
+    <nav class="navy" role="navigation">
+
+      <a href="index.html" class="brand-logo hide-on-small-only"><img class="padding-logo responsive-img" id="logo" src="media/coffee_ride_logo.png"/></a>
+
       <div class="nav-wrapper container">
 
         <a id="logo-container" href="index.html" class="white-text titleText flow-text">THE COFFEE RIDE</a>
 
-<!-- Nav Options -->
+
+        <!-- Navigation Options -->
+
         <ul class="right hide-on-med-and-down">
           <li><a href="indexAbout.html" class="white-text titleText">ABOUT</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="indexAbout.html">ABOUT</a></li>
-        </ul>
 
         <ul class="right hide-on-med-and-down">
           <li><a href="indexCheckout.html" class="white-text titleText">MY CART</a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="indexCheckout.html">MY CART</a></li>
         </ul>
 
         <ul class="right hide-on-med-and-down">
           <li><a href="indexShop.html" class="white-text titleText">SHOP</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="indexShop.html">SHOP</a></li>
-        </ul>
 
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html" class="white-text titleText">HOME</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="index.html">HOME</a></li>
-        </ul>
 
-    </div>
-  </nav>
-</div>
+
+  <!-- Hamburger -->
+  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+  </div>
+
+
+    </nav>
+
+      </div>
+
+
+  <!-- Mobile Sidebar -->
+  <ul id="nav-mobile" class="side-nav">
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="indexShop.html">SHOP</a></li>
+  <li><a href="indexCheckout.html">MY CART</a></li>
+  <li><a href="indexAbout.html">ABOUT</a></li>
+      </ul>
+
 
 <!-- First Section Image -->
 
@@ -146,13 +156,14 @@
      <img class="activator" src="media/sidamo.jpg">
    </div>
    <div class="card-content">
-     <span id = "" class="card-title activator grey-text text-darken-4">Ethiopia Sidamo Rophi<i class="material-icons right icon-color">info_outline</i></span>
+     <span id = "" class="card-title activator grey-text text-darken-4">Ethiopia Sidamo<i class="material-icons right icon-color">info_outline</i></span>
      <p>Stonefruit | Strawberry | Caramel</p>
      <p class= "coffee-price">$15</p>
-     <br>
 
+<br>
      <a class=" waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
    </div>
+
 
    <div class="card-reveal">
      <span class="card-title grey-text text-darken-4">Ethiopia Sidamo Rophi<i class="material-icons right">close</i></span>
@@ -176,7 +187,7 @@
          <span class="card-title activator grey-text text-darken-4">Costa Rica Sonora<i class="material-icons right icon-color">info_outline</i></span>
          <p>Strawberry | Dark Chocolate | Graham Cracker</p>
          <p>$15</p>
-         <br>
+
          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
        </div>
 
@@ -247,7 +258,7 @@
                    </div>
                    <div class="card-content">
                      <span class="card-title activator grey-text text-darken-4">Rwanda Coko Honey<i class="material-icons right icon-color">info_outline</i></span>
-                     <p>Sweet | Juicy | Heavy Body | Almonds</p>
+                     <p>Juicy | Heavy Body | Almonds</p>
                      <p>$15</p>
                      <br>
                      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
@@ -275,7 +286,7 @@
                        </div>
                        <div class="card-content">
                          <span class="card-title activator grey-text text-darken-4">Brazil Prazeres<i class="material-icons right icon-color">info_outline</i></span>
-                         <p>Milk Chocolate | Toffee | Buttery | Balanced</p>
+                         <p>Milk Chocolate | Toffee | Buttery</p>
                           <p>$15</p>
                           <br>
 
@@ -351,7 +362,7 @@
              </div>
              <div class="card-content">
                <span class="card-title activator grey-text text-darken-4">Sumatra Mandheling<i class="material-icons right icon-color">info_outline</i></span>
-               <p>Bourbon | Bakers Chocolate | Earthy Aroma</p>
+               <p>Bourbon | Bakers Chocolate </p>
                 <p>$15</p>
                <br>
                  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
@@ -379,7 +390,7 @@
                    <span class="card-title activator grey-text text-darken-4">Guatemala Carrizal<i class="material-icons right icon-color">info_outline</i></span>
                    <p>Caramel | Dark Chocolate | Raisin</p>
                    <p>$15</p>
-                  <br>
+
                      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
 
                  </div>
@@ -463,9 +474,9 @@
 
       <div class="col s12 m12 l12">
 
-        <a href="https://www.facebook.com/thecoffeeride/"><img src="media/facebook_icon.png" target="blank" alt="facebook_icon"></a>
-        <a href="https://twitter.com/thecoffeeride?lang=en"><img src="media/twitter_icon.png" alt=""></a>
-        <a href="https://www.instagram.com/thecoffeeride/"><img src="media/instagram_icon.png" alt=""></a>
+        <a class = "social-media-icon" href="https://www.facebook.com/thecoffeeride/"><img src="media/facebook_icon.png" target="blank" alt="facebook_icon"></a>
+        <a class = "social-media-icon" href="https://twitter.com/thecoffeeride?lang=en"><img src="media/twitter_icon.png" alt=""></a>
+        <a class = "social-media-icon" href="https://www.instagram.com/thecoffeeride/"><img src="media/instagram_icon.png" alt=""></a>
         <h6 class="grey-text text-lighten-4">
           970 - 389 - 9939
           <br>
