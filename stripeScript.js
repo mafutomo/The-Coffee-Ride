@@ -96,7 +96,7 @@ $(document).ready(function(){
       errorElement.textContent = result.error.message;
     } else {
       // Send the token to your server
-      Materialize.toast('Order Received!', 4000);
+
       stripeTokenHandler(result.token);
     }
 

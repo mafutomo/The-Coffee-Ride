@@ -78,6 +78,11 @@ body {
 
 .card{
   font-family: 'Work Sans', sans-serif;
+  /*height: 100%;*/
+}
+
+.card p:first-of-type{
+  height: 60px;
 }
 
 .modal-styling{
