@@ -54,6 +54,8 @@ body {
   padding-right: 4cm;
 }
 
+
+
 /*Container Modifications*/
 #wider-container {
   height: 750px;
@@ -70,6 +72,9 @@ body {
 
 
 /*Fonts and Title Texts*/
+.totals-font{
+  font-weight: 900;
+}
 
 .card{
   font-family: 'Work Sans', sans-serif;

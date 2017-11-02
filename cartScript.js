@@ -11,17 +11,40 @@ var total = subtotal + taxedAmount;
 //To update table
 
     for (let key in cart){
-      $('#cart-final').append("<tr>" + "<td>" + key + "</td>" + "<td>" + "$" + cart[key][0] + "</td>" + "<td>" + cart[key][1] +"</td>" + "</tr>");
+      $('#cart-final').append(
+      "<tr>" +
+      "<td>" +
+      key +
+      "</td>" +
+      "<td>" +
+      cart[key][1] +
+      "</td>" +
+      "<td>" +
+      "$  " +
+      cart[key][0] +
+      "</td>" +
+      "<td>" +
+      '<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>' +
+      "</td>" +
+      "</tr>");
     }
 
 //To update subtotal
 
-  $("#subtotal-val").empty().text("$" + subtotal);
+  $("#subtotal-val").empty().text("$  " + subtotal);
 
 //To update tax amount
-$("#tax-val").empty().text("$" + taxedAmount.toFixed(2));
+$("#tax-val").empty().text("$  " + taxedAmount.toFixed(2));
 
 //To update total amount
-$("#total-val").empty().text("$" + total.toFixed(2));
+$("#total-val").empty().text("$  " + total.toFixed(2));
 
+//Clear Cart
+$("#clear-cart").click(function(event){
+  event.preventDefault();
+  localStorage.clear();
+   location.reload();
+})
+
+ $('.modal').modal();
 })
