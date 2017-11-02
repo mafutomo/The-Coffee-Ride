@@ -8,9 +8,10 @@ body {
 
 }
 
-#shop-background-image{
-  background-image: url("../media/largerbackground.jpg");
-  background-size: 1600px 2300px;
+.background-image{
+  /*background-image: url("../media/largerbackground.jpg");*/
+  background-image: url("../media/topography.png");
+  /*background-size: 1600px 2300px;*/
   /*background-repeat: no-repeat;*/
   background-position: center;
 }
@@ -66,12 +67,6 @@ body {
 
 }
 
-/*Background Images*/
-.background-image{
-  background-image: url("../media/background_pink.jpg");
-  background-size: 2500px 2000px;
-  background-repeat: no-repeat;
-}
 
 /*Fonts and Title Texts*/
 
@@ -79,7 +74,7 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-#header-text{
+.header-text{
   font-family: 'Work Sans', sans-serif;
   background-color:rgba(244, 244, 244,0.75);
   font-size: 108%;
