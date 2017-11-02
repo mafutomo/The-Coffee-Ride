@@ -10,7 +10,7 @@ function updateTotalVal(itemPrice,tax) {
   subtotal += itemPrice;
   total = subtotal * tax;
   localStorage.setItem('subtotal',JSON.stringify(subtotal));
-  $("#subtotal").empty().text("Subtotal = "+"$" + subtotal);
+  $("#subtotal").empty().text("Subtotal :  "+"$" + subtotal);
   return (total > subtotal);
 }
 

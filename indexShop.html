@@ -29,18 +29,18 @@
   <!-- Navigation Bar -->
 <div class="navbar-fixed">
   <nav class="navy" role="navigation">
-<a href="index.html" class="brand-logo hide-on-small-only"><img class="alt-padding-logo responsive-img" id="logo" src="media/coffee_ride_logo.png"/></a>
+<a href="index.html" class="brand-logo hide-on-small-only"><img class="padding-logo responsive-img" id="logo" src="media/coffee_ride_logo.png"/></a>
       <div class="nav-wrapper container">
 
         <a id="logo-container" href="index.html" class="white-text titleText flow-text">THE COFFEE RIDE</a>
 
 <!-- Nav Options -->
         <ul class="right hide-on-med-and-down">
-          <li><a href="#" class="white-text titleText">ABOUT</a></li>
+          <li><a href="indexAbout.html" class="white-text titleText">ABOUT</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">ABOUT</a></li>
+          <li><a href="indexAbout.html">ABOUT</a></li>
         </ul>
 
         <ul class="right hide-on-med-and-down">
@@ -407,12 +407,33 @@
 <!-- Modal Structure -->
 <div id="modal1" class="modal bottom-sheet">
   <div class="modal-content">
-    <h4>Shopping Cart</h4>
-    <div class="right-align">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Continue Shopping</a>
+
+    <div class="row">
+
+      <div class="col s6 left-align">
+              <h4 class = "modal-styling">Shopping Cart</h4>
+        <p id="subtotal">$0.00</p>
+      </div>
+      <div class="col s6 right-align">
+        <div class="">
+            <a href="indexCheckout.html" class="modal-action modal-close waves-effect waves-light btn">My Cart</a>
+        </div>
+          <br>
+        <div class="">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn">Continue Shopping</a>
+        </div>
+
+
+      </div>
+
+
     </div>
 
-      <p id="subtotal">$0.00</p>
+    <!-- <div class="right-align">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Continue Shopping</a>
+    </div> -->
+
+      <!-- <p id="subtotal">$0.00</p> -->
 
     <table>
         <thead>

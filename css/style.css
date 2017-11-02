@@ -32,6 +32,11 @@ body {
   border-radius: 50%;
 }
 
+.social-media-icon{
+  padding-right: 8px;
+
+}
+
 /*Buttons*/
 .button-font{
   font-family: 'Cabin', sans-serif;
@@ -72,6 +77,10 @@ body {
 
 .card{
   font-family: 'Work Sans', sans-serif;
+}
+
+.modal-styling{
+    font-family: 'Work Sans', sans-serif;
 }
 
 .header-text{
