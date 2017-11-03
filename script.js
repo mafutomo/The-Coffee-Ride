@@ -18,7 +18,17 @@ function updateTotalVal(itemPrice,tax) {
 function updateModal(){
 $('#shopping-cart').empty();
     for (let key in cart){
-      $('#shopping-cart').append("<tr>" + "<td>" + key + "</td>" + "<td>" + "$" + cart[key][0] + "</td>" + "<td>" + cart[key][1] +"</td>" + "</tr>");
+      $('#shopping-cart').append("<tr>"
+      + "<td>"
+      + key
+      + "</td>"
+      + "<td>"
+      + cart[key][1]
+      + "</td>"
+      + "<td>"
+      + "$  " + cart[key][0] 
+      +"</td>"
+      + "</tr>");
     }
 
 }//end of function

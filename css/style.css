@@ -47,6 +47,10 @@ body {
   background-color: #eac67a;
 }
 
+#google-map{
+
+}
+
 /*Section Padding*/
 
 
@@ -81,7 +85,7 @@ body {
   /*height: 100%;*/
 }
 
-.card p:first-of-type{
+.card-content p:first-of-type{
   height: 60px;
 }
 

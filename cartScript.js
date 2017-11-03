@@ -23,9 +23,9 @@ var total = subtotal + taxedAmount;
       "$  " +
       cart[key][0] +
       "</td>" +
-      "<td>" +
-      '<a class="btn-floating btn waves-effect waves-light red lighten-2"><i class="material-icons">remove</i></a>' +
-      "</td>" +
+      // "<td>" +
+      // '<a class="btn-floating btn waves-effect waves-light red lighten-2"><i class="material-icons">remove</i></a>' +
+      // "</td>" +
       "</tr>");
     }
 

@@ -1,42 +1,29 @@
 $(document).ready(function(){
 
-  $("#checkout_button").click(function(event) {
-    let $name = $("#name").val();
-    let $phone = $("#phone").val().split("-").join("");
-    let $streetAddress = $("#street-address").val();
-    let $city = $("#city").val();
-    let $state = $("#state").val();
-    let $zip = $("#zip").val();
+var stripeTokenID = "";
 
-    console.log(parseInt($phone));
-    console.log(isNaN(parseInt($phone)));
+var utcSeconds = 1234567890;
+var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+d.setUTCSeconds(utcSeconds);
 
-    if ($name === "") {
+  function stripeTokenHandler(token) {
+    // Insert the token ID into the form so it gets submitted to the server
+    var form = document.getElementById('payment-form');
+    var hiddenInput = document.createElement('input');
+    hiddenInput.setAttribute('type', 'hidden');
+    hiddenInput.setAttribute('name', 'stripeToken');
+    hiddenInput.setAttribute('value', token.id);
+    form.appendChild(hiddenInput);
 
-      Materialize.toast('Please fill out your name', 4000)
+    // Submit the form
+    // form.submit();
+    //
+    // Materialize.toast('Success! Your Purchase ID is =      '+ stripeTokenID, 5000)
 
-    } else if ($phone.length !== 10) {
+    alert('Your order has been received! \n \nYour Purchase ID is =\n'+ stripeTokenID)
+  }
 
-      Materialize.toast('Please enter a valid phone number', 4000)
 
-    } else if ($phone === "") {
-
-      Materialize.toast('Please enter a phone number', 4000)
-
-    } else if ($streetAddress === "" || $city === "" || $state === "" || $zip === "") {
-
-      Materialize.toast('One or more of your address information is not complete', 4000)
-
-    } else if ($zip.length !== 5) {
-
-      Materialize.toast('Please enter a valid zipcode', 4000)
-
-    } else {
-
-      console.log("NOT zero!");
-    }
-
-  }); //end of submit click
 
   //STRIPE
   // Create a Stripe client
@@ -96,12 +83,60 @@ $(document).ready(function(){
       errorElement.textContent = result.error.message;
     } else {
       // Send the token to your server
-
+      console.log("result.token", result.token);
+      // console.log("result.token.card  = ", result.token.id)
+      stripeTokenID = result.token.id
+      console.log("stripeTokenID = ", stripeTokenID)
       stripeTokenHandler(result.token);
+
     }
 
   });
   });
+
+
+  $("#phone").keyup(function() {
+    $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/, '$1-$2-$3'))
+  });
+
+  $("#checkout_button").click(function(event) {
+    let $name = $("#name").val();
+    let $phone = $("#phone").val().split("-").join("");
+    let $streetAddress = $("#street-address").val();
+    let $city = $("#city").val();
+    let $state = $("#state").val();
+    let $zip = $("#zip").val();
+
+    console.log(parseInt($phone));
+    console.log(isNaN(parseInt($phone)));
+
+    if ($name === "") {
+
+      Materialize.toast('Please fill out your name', 4000)
+
+    } else if ($phone.length !== 10) {
+
+      Materialize.toast('Please enter a valid phone number', 4000)
+
+    } else if ($phone === "") {
+
+      Materialize.toast('Please enter a phone number', 4000)
+
+    } else if ($streetAddress === "" || $city === "" || $state === "" || $zip === "") {
+
+      Materialize.toast('One or more of your address information is not complete', 4000)
+
+    } else if ($zip.length !== 5) {
+
+      Materialize.toast('Please enter a valid zipcode', 4000)
+
+    } else {
+
+      console.log("NOT zero!");
+    }
+
+  }); //end of submit click
+
 
 
 });
