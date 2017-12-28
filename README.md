@@ -4,7 +4,17 @@
 Webiste link : thecoffeeride.mutomo.surge.sh
 
 ## The Coffee Ride
-This is a frontend website that allows users to shop for coffee online.
+This is a front-end website that allows users to shop for coffee.
+
+###### Technologies
+- HTML5
+- CSS
+- Javascript
+- JQuery
+- Materialize
+- Local Storage
+- Stripe API
+- Mocha & Chai
 
 ###### Business Background
 The Coffee Ride is a real local business in Boulder that delivers quality, ethically sourced coffee via bikes.

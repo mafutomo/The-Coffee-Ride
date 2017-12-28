@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Coffee Ride - Shop</title>
   <link rel="icon" href="media/favicon.ico">
-
   <!-- Javascript -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="https://js.stripe.com/v3/"></script>
-
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet">
@@ -24,467 +22,373 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
+
 <body class="background-image">
 
   <!-- Navigation Bar -->
-
   <div class="navbar-fixed">
-
     <nav class="navy" role="navigation">
-
       <a href="index.html" class="brand-logo hide-on-small-only"><img class="padding-logo responsive-img" id="logo" src="media/coffee_ride_logo.png"/></a>
-
       <div class="nav-wrapper container">
-
         <a id="logo-container" href="index.html" class="white-text titleText flow-text">THE COFFEE RIDE</a>
 
-
         <!-- Navigation Options -->
-
         <ul class="right hide-on-med-and-down">
           <li><a href="indexAbout.html" class="white-text titleText">ABOUT</a></li>
         </ul>
-
-
         <ul class="right hide-on-med-and-down">
           <li><a href="indexCheckout.html" class="white-text titleText">MY CART</a></li>
         </ul>
-
         <ul class="right hide-on-med-and-down">
           <li><a href="indexShop.html" class="white-text titleText">SHOP</a></li>
         </ul>
-
-
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html" class="white-text titleText">HOME</a></li>
         </ul>
 
-
-
-  <!-- Hamburger -->
-  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
-  </div>
-
-
-    </nav>
-
+        <!-- Hamburger Menu -->
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
+    </nav>
+  </div>
 
 
   <!-- Mobile Sidebar -->
   <ul id="nav-mobile" class="side-nav">
-  <li><a href="index.html">HOME</a></li>
-  <li><a href="indexShop.html">SHOP</a></li>
-  <li><a href="indexCheckout.html">MY CART</a></li>
-  <li><a href="indexAbout.html">ABOUT</a></li>
-      </ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="indexShop.html">SHOP</a></li>
+    <li><a href="indexCheckout.html">MY CART</a></li>
+    <li><a href="indexAbout.html">ABOUT</a></li>
+  </ul>
 
 
-<!-- First Section Image -->
+  <!-- First Section Image -->
 
   <div id="smaller-container" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-
         <div class="row center">
         </div>
-
         <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="media/shop_cover_page.jpg" alt="Roaster"></div>
   </div>
 
-<!-- Paragraph -->
+  <!-- Paragraph -->
 
 
-<!-- The Content -->
-<div class="container card-font">
-  <div class="section">
-  <div class="row">
-
-    <div class="center-align">
-      <br>
-      <p class = "header-text">We are offering coffee from a variety of rotating regions. <br> All of our products are roasted to order and the freshness of our coffee is just as important to us as the origin. <br>Each bag is 12 oz/340 grams.</p>
-    </div>
-
-    <!--   Light Coffee Section   -->
-
+  <!-- The Content -->
+  <div class="container card-font">
+    <div class="section">
+      <div class="row">
+        <div class="center-align">
+          <br>
+          <p class="header-text">We are offering coffee from a variety of rotating regions. <br> All of our products are roasted to order and the freshness of our coffee is just as important to us as the origin. <br>Each bag is 12 oz/340 grams.</p>
+        </div>
+        <!--   Light Coffee Section   -->
         <br>
         <blockquote>
-          <h5 class = "brew-type-title">LIGHT BREW</h5>
+          <h5 class="brew-type-title">LIGHT BREW</h5>
         </blockquote>
-          <br>
+        <br>
+        <!-- First Card -->
 
-<!-- First Card -->
+        <div class="col s12 m4 l4">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/coffee1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title grey-text text-darken-4 activator ">Ethiopia Derar Ela<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Pineapple | Oranges | Green Tea</p>
+              <p>$18</p>
 
-<div class="col s12 m4 l4">
-  <div class="card z-depth-4">
-     <div class="card-image waves-effect waves-block waves-light">
-       <img class="activator" src="media/coffee1.jpg">
-     </div>
-     <div class="card-content">
-       <span class="card-title grey-text text-darken-4 activator ">Ethiopia Derar Ela<i class="material-icons right icon-color">info_outline</i></span>
-       <p>Pineapple | Oranges | Green Tea</p>
-       <p>$18</p>
-
-       <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart
-       </a>
-     </div>
-
-     <div class="card-reveal">
-       <span class="card-title grey-text text-darken-4">Ethiopia Derar Ela<i class="material-icons right">close</i></span>
-       <p>This direct trade/natural process coffee was sourced from the Gerbicho Village, located in the Yirgacheffe region which specializes in producing coffees with cupping scores of 90+. </p>
-
-       <div class="card-action">
-         <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-        </div>
-
-     </div>
-
-   </div>
-</div>
-
-
-<!-- Second Card -->
-<div class="col s12 m4 l4">
-<div class="card z-depth-4">
-   <div class="card-image waves-effect waves-block waves-light">
-     <img class="activator" src="media/sidamo.jpg">
-   </div>
-   <div class="card-content">
-     <span id = "" class="card-title activator grey-text text-darken-4">Ethiopia Sidamo<i class="material-icons right icon-color">info_outline</i></span>
-     <p>Stonefruit | Strawberry | Caramel</p>
-     <p class= "coffee-price">$15</p>
-
-
-     <a class=" waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-   </div>
-
-
-   <div class="card-reveal">
-     <span class="card-title grey-text text-darken-4">Ethiopia Sidamo Rophi<i class="material-icons right">close</i></span>
-     <p>Carefully hand picked, direct trade, natural process, and grown above 2000 meters is what makes this African coffee a winner. With a flavor profile featuring sweet strawberry jam and caramel, you’ll be delighted with every cup.</p>
-     <div class="card-action">
-       <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-      </div>
-
-   </div>
- </div>
-    </div>
-
-    <!-- Third Card -->
-
-    <div class="col s12 m4 l4">
-    <div class="card z-depth-4">
-       <div class="card-image waves-effect waves-block waves-light">
-         <img class="activator" src="media/coffee3.jpg">
-       </div>
-       <div class="card-content">
-         <span class="card-title activator grey-text text-darken-4">Costa Rica Sonora<i class="material-icons right icon-color">info_outline</i></span>
-         <p>Strawberry | Dark Chocolate | Graham Cracker</p>
-         <p>$15</p>
-
-         <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-       </div>
-
-       <div class="card-reveal">
-         <span class="card-title grey-text text-darken-4">Costa Rica Sonora<i class="material-icons right">close</i></span>
-         <p>This Central American coffee is extremely special. Besides the fact that this coffee is a show stopping crowd pleaser, the Hacienda Sonora farm also takes full consideration in growing only the highest quality coffees with the most sustainable growing practices. Located on 55 acres, with 55 of those being dedicated to forest reserve, this farm is also home to a variety of species of birds and animals that seek refuge on its land. Running entirely on 100% renewable energy harvested from the farm, this natural process coffee is also direct trade certified and grown at 1200 meters. Cupping notes boast a well-balanced combination of strawberry, dark chocolate and graham cracker that will please your palate any time of the day.</p>
-
-         <div class="card-action">
-           <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-          </div>
-
-       </div>
-     </div>
-        </div>
-
-  </div><!-- row -->
-</div><!-- section -->
-</div><!-- container -->
-
-    <!--   Medium Coffee Section   -->
-
-<div class="container">
-  <div class="section">
-    <div class="row">
-
-
-            <br>
-            <blockquote>
-
-                <h5 class = "brew-type-title">MEDIUM BREW</h5>
-
-            </blockquote>
-            <br>
-
-              <!-- First Card -->
-
-            <div class="col s12 m4 l4">
-            <div class="card z-depth-4">
-               <div class="card-image waves-effect waves-block waves-light">
-                 <img class="activator" src="media/burundi.jpg">
-               </div>
-               <div class="card-content">
-                 <span class="card-title activator grey-text text-darken-4">Burundi Nemba<i class="material-icons right icon-color">info_outline</i></span>
-                 <p>Green Apple | Cherry | Complex </p>
-                 <p>$15</p>
-
-                  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-               </div>
-
-               <div class="card-reveal">
-                 <span class="card-title grey-text text-darken-4">Burundi Nemba<i class="material-icons right">close</i></span>
-                 <p>This wonderful washed/direct trade African coffee is a great addition to The Coffee Ride’s unique coffee offerings. Burundi produces exceptional and exotic coffees due to its perfect coffee growing conditions. Its volcanic soil, regular rain-fall, high altitude and thousand hills all contribute to the production of excellent coffee.</p>
-
-                 <div class="card-action">
-                   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-                  </div>
-
-               </div>
-             </div>
-                </div>
-
-                <!-- Second Card -->
-
-                <div class="col s12 m4 l4">
-                <div class="card z-depth-4">
-                   <div class="card-image waves-effect waves-block waves-light">
-                     <img class="activator" src="media/coffeem2.jpg">
-                   </div>
-                   <div class="card-content">
-                     <span class="card-title activator grey-text text-darken-4">Rwanda Coko Honey<i class="material-icons right icon-color">info_outline</i></span>
-                     <p>Juicy | Heavy Body | Almonds</p>
-                     <p>$15</p>
-
-                     <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-                   </div>
-
-
-                   <div class="card-reveal">
-                     <span class="card-title grey-text text-darken-4">Rwanda Coko Honey<i class="material-icons right">close</i></span>
-                     <p>This unique direct trade African coffee was grown on a farm run predominantly by females and honey processed with the conservation of it’s precious mountain water at the forefront. This Rwanda is sweet and juicy with a heavy body presenting smooth notes of almonds and milk chocolate. Enjoy!</p>
-
-                     <div class="card-action">
-                       <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-                      </div>
-
-                   </div>
-                 </div>
-                    </div>
-
-                    <!-- Third Card -->
-
-                    <div class="col s12 m4 l4">
-                    <div class="card z-depth-4">
-                       <div class="card-image waves-effect waves-block waves-light">
-                         <img class="activator" src="media/brazil.jpg">
-                       </div>
-                       <div class="card-content">
-                         <span class="card-title activator grey-text text-darken-4">Brazil Prazeres<i class="material-icons right icon-color">info_outline</i></span>
-                         <p>Milk Chocolate | Toffee | Buttery</p>
-                          <p>$15</p>
-                           <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-
-                       </div>
-
-                       <div class="card-reveal">
-                         <span class="card-title grey-text text-darken-4">Brazil Prazeres<i class="material-icons right">close</i></span>
-                         <p>This wonderful Natural Process Brazil comes from the Givago Miranda farm in Prazeres.  Direct Trade and grown at 1450 meters helps give this balanced coffee notes of Milk Chocolate, Toffee, and is extremely buttery(think Werther's Original candy).</p>
-
-                         <div class="card-action">
-                           <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-                          </div>
-
-                       </div>
-                     </div>
-                        </div>
-
-
-
-
-        </div><!-- row -->
-      </div><!-- section -->
-      </div><!-- container -->
-
-    <!-- Dark Brews -->
-
-    <div class="container">
-      <div class="section">
-        <div class="row">
-
-                  <br>
-                  <blockquote>
-
-                      <h5 class = "brew-type-title">DARK BREW</h5>
-
-                  </blockquote>
-                  <br>
-
-      <!-- First Card -->
-      <div class="col s12 m3 l4">
-      <div class="card z-depth-4">
-         <div class="card-image waves-effect waves-block waves-light">
-           <img class="activator" src="media/coffeed1.jpg">
-         </div>
-         <div class="card-content">
-           <span class="card-title activator grey-text text-darken-4">For Pete's Sake<i class="material-icons right icon-color">info_outline</i></span>
-           <p>Earthy | Caramel | Espresso</p>
-           <p>$15</p>
-
-           <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-         </div>
-
-         <div class="card-reveal">
-           <span class="card-title grey-text text-darken-4">For Pete's Sake<i class="material-icons right">close</i></span>
-           <p>For Pete’s Sake Espresso was developed especially for our friend Pete that was looking for an espresso shot with deep chocolate, earthy and caramel notes. Turns out, this coffee blend is amazing for drip brewing as well creating an earthy, thick bodied cup of coffee.</p>
-
-           <div class="card-action">
-             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart
+              </a>
             </div>
 
-         </div>
-       </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Ethiopia Derar Ela<i class="material-icons right">close</i></span>
+              <p>This direct trade/natural process coffee was sourced from the Gerbicho Village, located in the Yirgacheffe region which specializes in producing coffees with cupping scores of 90+. </p>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <!-- Second Card -->
 
-          <div class="col s12 m3 l4">
+        <!-- Second Card -->
+        <div class="col s12 m4 l4">
           <div class="card z-depth-4">
-             <div class="card-image waves-effect waves-block waves-light">
-               <img class="activator" src="media/coffee2.jpg">
-             </div>
-             <div class="card-content">
-               <span class="card-title activator grey-text text-darken-4">Sumatra Mandheling<i class="material-icons right icon-color">info_outline</i></span>
-               <p>Bourbon | Bakers Chocolate </p>
-                <p>$15</p>
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/sidamo.jpg">
+            </div>
+            <div class="card-content">
+              <span id="" class="card-title activator grey-text text-darken-4">Ethiopia Sidamo<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Stonefruit | Strawberry | Caramel</p>
+              <p class="coffee-price">$15</p>
+              <a class=" waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Ethiopia Sidamo Rophi<i class="material-icons right">close</i></span>
+              <p>Carefully hand picked, direct trade, natural process, and grown above 2000 meters is what makes this African coffee a winner. With a flavor profile featuring sweet strawberry jam and caramel, you’ll be delighted with every cup.</p>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                 <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+        <!-- Third Card -->
 
-             </div>
+        <div class="col s12 m4 l4">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/coffee3.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Costa Rica Sonora<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Strawberry | Dark Chocolate | Graham Cracker</p>
+              <p>$15</p>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+            </div>
 
-             <div class="card-reveal">
-               <span class="card-title grey-text text-darken-4">Sumatra Mandheling<i class="material-icons right">close</i></span>
-               <p>This direct trade/wet-hulled processed coffee is perfect for anyone seeking a earthier flavor profile. Grown between 1100-1300 meters, there is no particular farm that these Sumatran beans came from, but a variety of small farms working together toward the common goal of producing only the best coffee beans. It’s a combination of these qualities that give this coffee cupping notes of Bourbon and Bakers chocolate. Fantastic for the cold mornings or winter months, this coffee will definitely satisfy cup after cup.</p>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Costa Rica Sonora<i class="material-icons right">close</i></span>
+              <p>This Central American coffee is extremely special. Besides the fact that this coffee is a show stopping crowd pleaser, the Hacienda Sonora farm also takes full consideration in growing only the highest quality coffees with the most sustainable
+                growing practices. Located on 55 acres, with 55 of those being dedicated to forest reserve, this farm is also home to a variety of species of birds and animals that seek refuge on its land. Running entirely on 100% renewable energy harvested
+                from the farm, this natural process coffee is also direct trade certified and grown at 1200 meters. Cupping notes boast a well-balanced combination of strawberry, dark chocolate and graham cracker that will please your palate any time
+                of the day.</p>
 
-               <div class="card-action">
-                 <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-                </div>
-             </div>
-           </div>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
               </div>
 
-              <!-- Third Card -->
-              <div class="col s12 m3 l4">
-              <div class="card z-depth-4">
-                 <div class="card-image waves-effect waves-block waves-light">
-                   <img class="activator" src="media/coffee4.jpeg">
-                 </div>
-                 <div class="card-content">
-                   <span class="card-title activator grey-text text-darken-4">Guatemala Carrizal<i class="material-icons right icon-color">info_outline</i></span>
-                   <p>Caramel | Dark Chocolate | Raisin</p>
-                   <p>$15</p>
-
-                     <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-
-                 </div>
-
-                 <div class="card-reveal">
-                   <span class="card-title grey-text text-darken-4">Guatemala Carrizal<i class="material-icons right">close</i></span>
-                   <p>This wonderful Central American washed coffee is one of those that you will go to bed early for, just so you can wake up and brew another cup. Direct trade, washed, and grown above 1300 meters. Boasts cupping notes of sweet caramel, dark chocolate, and raisins. Enjoy!</p>
-                   <div class="card-action">
-                     <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
-                    </div>
-                 </div>
-               </div>
-                  </div>
-
-
-
-
-                    </div><!-- row -->
-                  </div><!-- section -->
-                  </div><!-- container -->
-<br><br>
-
-
-
-<!-- Modal Structure -->
-<div id="modal1" class="modal bottom-sheet">
-  <div class="modal-content">
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col s6 left-align">
-                <h4 class = "modal-styling">Shopping Cart</h4>
-          <p>All charges will be included on the My Cart page</p>
-        </div>
-        <div class="col s6 right-align">
-          <div class="">
-              <a href="indexCheckout.html" class="modal-action modal-close waves-effect waves-light btn"><i class="material-icons left">shopping_cart</i>My Cart</a>
+            </div>
           </div>
-            <br>
-          <div class="">
-                <a href="#!" class="modal-action modal-close waves-effect waves-light btn"><i class="material-icons left">navigate_next</i>Continue Shopping</a>
-          </div>
-
-
         </div>
-
-
       </div>
+    </div>
+  </div>
 
+  <!--   Medium Coffee Section   -->
 
-    <div class="row">
-      <div class="col s12 m6 l6">
-        <table class = "striped">
-            <thead>
-              <tr>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <br>
+        <blockquote>
+          <h5 class="brew-type-title">MEDIUM BREW</h5>
+        </blockquote>
+        <br>
+
+        <!-- First Card -->
+
+        <div class="col s12 m4 l4">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/burundi.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Burundi Nemba<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Green Apple | Cherry | Complex </p>
+              <p>$15</p>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Burundi Nemba<i class="material-icons right">close</i></span>
+              <p>This wonderful washed/direct trade African coffee is a great addition to The Coffee Ride’s unique coffee offerings. Burundi produces exceptional and exotic coffees due to its perfect coffee growing conditions. Its volcanic soil, regular
+                rain-fall, high altitude and thousand hills all contribute to the production of excellent coffee.</p>
+
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div class="col s12 m4 l4">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/coffeem2.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Rwanda Coko Honey<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Juicy | Heavy Body | Almonds</p>
+              <p>$15</p>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Rwanda Coko Honey<i class="material-icons right">close</i></span>
+              <p>This unique direct trade African coffee was grown on a farm run predominantly by females and honey processed with the conservation of it’s precious mountain water at the forefront. This Rwanda is sweet and juicy with a heavy body presenting
+                smooth notes of almonds and milk chocolate. Enjoy!</p>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Third Card -->
+        <div class="col s12 m4 l4">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/brazil.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Brazil Prazeres<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Milk Chocolate | Toffee | Buttery</p>
+              <p>$15</p>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Brazil Prazeres<i class="material-icons right">close</i></span>
+              <p>This wonderful Natural Process Brazil comes from the Givago Miranda farm in Prazeres. Direct Trade and grown at 1450 meters helps give this balanced coffee notes of Milk Chocolate, Toffee, and is extremely buttery(think Werther's Original
+                candy).</p>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Dark Brews -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <br>
+        <blockquote>
+          <h5 class="brew-type-title">DARK BREW</h5>
+        </blockquote>
+        <br>
+        <!-- First Card -->
+        <div class="col s12 m3 l4">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/coffeed1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">For Pete's Sake<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Earthy | Caramel | Espresso</p>
+              <p>$15</p>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">For Pete's Sake<i class="material-icons right">close</i></span>
+              <p>For Pete’s Sake Espresso was developed especially for our friend Pete that was looking for an espresso shot with deep chocolate, earthy and caramel notes. Turns out, this coffee blend is amazing for drip brewing as well creating an earthy,
+                thick bodied cup of coffee.</p>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="col s12 m3 l4">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/coffee2.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Sumatra Mandheling<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Bourbon | Bakers Chocolate </p>
+              <p>$15</p>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Sumatra Mandheling<i class="material-icons right">close</i></span>
+              <p>This direct trade/wet-hulled processed coffee is perfect for anyone seeking a earthier flavor profile. Grown between 1100-1300 meters, there is no particular farm that these Sumatran beans came from, but a variety of small farms working
+                together toward the common goal of producing only the best coffee beans. It’s a combination of these qualities that give this coffee cupping notes of Bourbon and Bakers chocolate. Fantastic for the cold mornings or winter months, this
+                coffee will definitely satisfy cup after cup.</p>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card -->
+        <div class="col s12 m3 l4">
+          <div class="card z-depth-4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="media/coffee4.jpeg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Guatemala Carrizal<i class="material-icons right icon-color">info_outline</i></span>
+              <p>Caramel | Dark Chocolate | Raisin</p>
+              <p>$15</p>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Guatemala Carrizal<i class="material-icons right">close</i></span>
+              <p>This wonderful Central American washed coffee is one of those that you will go to bed early for, just so you can wake up and brew another cup. Direct trade, washed, and grown above 1300 meters. Boasts cupping notes of sweet caramel, dark
+                chocolate, and raisins. Enjoy!</p>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <div class="row">
+          <div class="col s6 left-align">
+            <h4 class="modal-styling">Shopping Cart</h4>
+            <p>All charges will be included on the My Cart page</p>
+          </div>
+          <div class="col s6 right-align">
+            <div class="">
+              <a href="indexCheckout.html" class="modal-action modal-close waves-effect waves-light btn"><i class="material-icons left">shopping_cart</i>My Cart</a>
+            </div>
+            <br>
+            <div class="">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn"><i class="material-icons left">navigate_next</i>Continue Shopping</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <table class="striped">
+              <thead>
+                <tr>
                   <th>Item Name</th>
                   <th>Qty</th>
                   <th>Item Price</th>
-              </tr>
-            </thead>
-            <tbody id = 'shopping-cart'>
-              <!-- jQuery stuff happens here -->
-            </tbody>
-          </table>
-<br>
-          <p id="subtotal">$0.00</p>
+                </tr>
+              </thead>
+              <tbody id='shopping-cart'>
+                <!-- jQuery stuff happens here -->
+              </tbody>
+            </table>
+            <br>
+            <p id="subtotal">$0.00</p>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="modal-footer">
     </div>
-
-
-
-
-
-
-
   </div>
-  <div class="modal-footer">
-  </div>
-</div>
-
-
-<footer class="navy page-footer">
-  <div class="container">
-    <div class="row">
-
-      <div class="left-align">
-
-
-      <div class="col s12 m12 l12">
-
-        <a class = "social-media-icon" href="https://www.facebook.com/thecoffeeride/"><img src="media/facebook_icon.png" target="blank" alt="facebook_icon"></a>
-        <a class = "social-media-icon" href="https://twitter.com/thecoffeeride?lang=en"><img src="media/twitter_icon.png" alt=""></a>
-        <a class = "social-media-icon" href="https://www.instagram.com/thecoffeeride/"><img src="media/instagram_icon.png" alt=""></a>
-        <h6 class="grey-text text-lighten-4">
+  <footer class="navy page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="left-align">
+          <div class="col s12 m12 l12">
+            <a class="social-media-icon" href="https://www.facebook.com/thecoffeeride/"><img src="media/facebook_icon.png" target="blank" alt="facebook_icon"></a>
+            <a class="social-media-icon" href="https://twitter.com/thecoffeeride?lang=en"><img src="media/twitter_icon.png" alt=""></a>
+            <a class="social-media-icon" href="https://www.instagram.com/thecoffeeride/"><img src="media/instagram_icon.png" alt=""></a>
+            <h6 class="grey-text text-lighten-4">
           970 - 389 - 9939
           <br>
           <br>
@@ -495,19 +399,16 @@
           <br>
           <br>
           Boulder, Co. 80304</h6>
-
+          </div>
+        </div>
       </div>
     </div>
-
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Melissa Utomo</a>
+      </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-
-    <div class="container">
-    Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Melissa Utomo</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <!--  Scripts-->
   <script src="https://js.stripe.com/v3/"></script>
@@ -515,5 +416,6 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
-  </body>
+</body>
+
 </html>
