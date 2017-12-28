@@ -33,10 +33,5 @@ The Coffee Ride is a real local business in Boulder that delivers quality, ethic
 
 ![Alt text](media/checkout_ss.png "Optional Title")
 
-###### Technologies
-> HTML, CSS, Local Storage, Javascript, jQuery, Materialize (for mobile compatability and styling), Stripe API.
-
 Original website:
 https://the-coffee-ride-coffee-roasting-co.myshopify.com/
-
-Website styling inspiration: http://elmcoffeeroasters.com/
