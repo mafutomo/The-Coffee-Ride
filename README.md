@@ -22,7 +22,7 @@ The Coffee Ride is a real local business in Boulder that delivers quality, ethic
 ###### User Manual
 > The Front Page (Home) : This is an overview of the Business
 
-![Alt text](media/front_page_ss.png "Optional Title")
+![Alt text](media/mockup.jpeg "Optional Title")
 
 > Shop Tab : Here, users can browse through each coffee selection and add it to their cart by clicking the "Add to Cart" button. A modal will appear at the bottom of the screen showing a preview of their current shopping cart. If the user has previously visited the site, the site will remember their cart from the previous sessions. Users can also ready more about a specific coffee selection by clicking on the "information" icon.
 
