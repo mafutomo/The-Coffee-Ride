@@ -6,6 +6,18 @@ $('document').ready(function() {
   var taxedAmount = (subtotal * tax) - subtotal;
   var total = subtotal + taxedAmount;
 
+  if(jQuery.isEmptyObject(cart)){
+    $('#cart-final').append(
+      "<tr>" +
+      "<td>" +
+      "Nothing Selected Yet..." +
+      "</td>" +
+      "<td>" +
+      "</td>" +
+      "<td>" +
+      "</td>" +
+      "</tr>");
+  }
   //To update table
   for (let key in cart) {
     $('#cart-final').append(
