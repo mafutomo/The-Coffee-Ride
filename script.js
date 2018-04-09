@@ -68,7 +68,6 @@ $(document).ready(function() {
     event.preventDefault();
 
     var $target = $(event.target);
-    console.log("TARGET from card-reveal", $target);
     var $itemName = $target.parentsUntil('.card').siblings()[2].innerText;
     itemName = $itemName.slice(0, -5);
     var $itemPrice = $target.parents('.card').children().children()[3].innerText;
