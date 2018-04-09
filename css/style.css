@@ -81,7 +81,7 @@ body {
 .header-text {
   font-family: 'Work Sans', sans-serif;
   background-color: rgba(244, 244, 244, 0.75);
-  font-size: 108%;
+  font-size: 120%;
 }
 
 .section-head {
@@ -141,6 +141,10 @@ body {
 }
 
 /*Coffee Cards*/
+
+.intro-section{
+  margin-bottom: -30px;
+}
 
 .card-content {
   background-color: #f4f4f4;
