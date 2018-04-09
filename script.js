@@ -10,7 +10,7 @@ function updateTotalVal(itemPrice, tax) {
   subtotal += itemPrice;
   total = subtotal * tax;
   localStorage.setItem('subtotal', JSON.stringify(subtotal));
-  $("#subtotal").empty().text("Subtotal :  " + "$" + subtotal);
+  $("#subtotal").empty().text(`Subtotal :  $${subtotal}`);
   return (total > subtotal);
 }
 
@@ -18,25 +18,20 @@ function updateTotalVal(itemPrice, tax) {
 function updateModal() {
   $('#shopping-cart').empty();
   for (let key in cart) {
-    $('#shopping-cart').append("<tr>" +
-      "<td>" +
-      key +
-      "</td>" +
-      "<td>" +
-      cart[key][1] +
-      "</td>" +
-      "<td>" +
-      "$  " + cart[key][0] +
-      "</td>" +
-      "</tr>");
-  }
-}
-
-//Function to Update Cart Page
-function updateCart() {
-  $('#cart-final').empty();
-  for (let key in cart) {
-    $('#cart-final').append("<tr>" + "<td>" + key + "</td>" + "<td>" + "$" + cart[key][0] + "</td>" + "<td>" + cart[key][1] + "</td>" + "</tr>");
+    $('#shopping-cart').append(
+      `<tr>
+      <td>
+      ${key}
+      </td>
+      <td>
+      ${cart[key][1]}
+      </td>
+      <td>
+      $
+      ${cart[key][0].toFixed(2)}
+      </td>
+      </tr>`
+    );
   }
 }
 
@@ -82,5 +77,6 @@ $(document).ready(function() {
     }
     updateModal();
   });
+  
   $('.modal').modal();
 });

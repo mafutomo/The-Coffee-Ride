@@ -11,9 +11,3 @@ describe('updateModal', function() {
     expect(updateModal).to.be.a('function')
   })
 })
-
-describe('updateCart', function() {
-  it('is updateCart a function', function() {
-    expect(updateCart).to.be.a('function')
-  })
-})
